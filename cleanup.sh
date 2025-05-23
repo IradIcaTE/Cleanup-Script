@@ -1,6 +1,6 @@
 #!/bin/bash
 
 TARGET_DIR=$1
-echo "Cleaning up .log files older than 2 days in: $TARGET_DIR"
+echo "Cleaning up .log files in: $TARGET_DIR"
 
-find "$TARGET_DIR" -type f -name "*.log" -print -delere
+find "$TARGET_DIR" -type f -name "*.log" -print -delete
