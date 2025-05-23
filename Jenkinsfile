@@ -9,10 +9,10 @@ pipeline {
         stage("Clean log Files") {
             steps {
                 echo "Target Directory: ${params.CLEANUP_PATH}"
-                sh """
+                sh '''
                     chmod +x cleanup.sh
                     ./cleanup.sh "${params.CLEANUP_PATH.sh}"
-                """
+                '''
             }
         }
     }
